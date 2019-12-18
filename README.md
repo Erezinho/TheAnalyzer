@@ -3,7 +3,8 @@ The Analyzer project goal is to detect clusters of points in n dimensional space
 
 I wrote this project as a POC during 2011 and decided to revive and share.
 
-The project is based on MFC library both for both UI purposes and Threading. I'm planing to release a newer version, based on C++ only (and probably Qt for the UI) to get it portable and cross-platform.
+The project is based on MFC library both for both UI purposes and Threading.
+Hopfully I'll release a newer version, based on C++ only (and probably Qt for the UI) to get it cross-platform.
 
 The algoritms are based on the 'Fuzzy Clustering and Data Analysis Toolbox'[1]
 
