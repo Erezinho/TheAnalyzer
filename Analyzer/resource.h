@@ -1,0 +1,49 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by Analyzer.rc
+//
+#define IDD_ANALYZER_DIALOG             9000
+#define IDC_COMBO_MULTIPLIER            9000
+#define IDC_PROGRESS                    9002
+#define IDC_EDIT_MULTIPLIER_RESULT      9003
+#define IDC_BUTTON_APPLY                9005
+#define IDC_BUTTON_EXECUTE_CLUSTERING   9005
+#define IDC_BUTTON_CLUSTER_AND_PROJECT  9005
+#define IDC_EDIT_ITERS_SO_FAR           9008
+#define IDC_EDIT_PROCESS_TYPE           9009
+#define IDC_BUTTON_UPDATE_PARAMETERS    9010
+#define IDC_EDIT_NUMBER_OF_CLUSTERS     9011
+#define IDC_EDIT_WEIGHTING_EXPONENT     9014
+#define IDC_EDIT_TERMINATION_TOLERANCE  9016
+#define IDC_EDIT_WEIGHTING_PARAMETER    9018
+#define IDC_EDIT_MAX_RATIO              9020
+#define IDC_EDIT_DIMENSION              9022
+#define IDC_EDIT_GRADIENT_SIZE          9023
+#define IDC_GRAPH_CONTROL               9025
+#define IDC_COMBO_CLUSTERING_ALG        9027
+#define IDC_COMBO_PROJECTION_ALG        9028
+#define IDC_EDIT_SIZE_CLUSTERED_SET     9030
+#define IDC_EDIT2                       9032
+#define IDC_EDIT_STATUS                 9032
+#define IDC_BUTTON_SAVE_DATA_SET        9033
+#define IDC_BUTTON_SAVE_PARTITION_MATRIX 9035
+#define IDC_BUTTONPROJECTION_MATRIX     9036
+#define IDC_EDIT_NUM_OF_PROJ_STEPS      9038
+#define IDC_BUTTON_STOP                 9041
+#define IDC_PROGRESS_CALCS              9042
+#define IDC_EDIT_ESTIM_TIME_TO_COMPLETION 9043
+#define IDC_ESTIMATED_TIME              9043
+#define IDC_TOTAL_TIME                  9044
+#define IDC_CHECK_AUTOMATIC_ANALYZING   9045
+#define IDC_CHECK_ANALYZE_AUTOMATICALLY 9045
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        9003
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         9046
+#define _APS_NEXT_SYMED_VALUE           9000
+#endif
+#endif

@@ -1,0 +1,262 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Analyzer.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Analyzer.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Hebrew resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1255)\r\n"
+    "#include ""res\\Analyzer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ANALYZER_DIALOG DIALOGEX 0, 0, 470, 455
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Analyzer Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_CLUSTERING_ALG,84,67,109,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PROJECTION_ALG,84,89,109,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_NUMBER_OF_CLUSTERS,302,18,34,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_WEIGHTING_EXPONENT,302,34,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAX_RATIO,302,53,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WEIGHTING_PARAMETER,302,72,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TERMINATION_TOLERANCE,302,91,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DIMENSION,425,17,34,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_GRADIENT_SIZE,425,39,34,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Clustering && Projection",IDC_BUTTON_EXECUTE_CLUSTERING,14,115,62,22,BS_MULTILINE
+    DEFPUSHBUTTON   "OK",IDOK,417,402,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,417,426,42,14
+    CONTROL         "",IDC_GRAPH_CONTROL,"Static",SS_WHITERECT,5,167,400,283
+    LTEXT           "Process Type:",IDC_STATIC,14,20,50,11
+    LTEXT           "Size of clustered set:",IDC_STATIC,15,142,47,15
+    EDITTEXT        IDC_EDIT_PROCESS_TYPE,74,19,119,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Number of clusters",IDC_STATIC,218,22,61,8
+    LTEXT           "Weighting exponent ",IDC_STATIC,218,38,68,8
+    LTEXT           "Termination tolerance\n(epsilon)",IDC_STATIC,218,90,78,17
+    LTEXT           "Weighting parameter\n(gamma)",IDC_STATIC,218,69,78,18
+    LTEXT           "Maximal ratio (beta)",IDC_STATIC,218,54,65,8
+    LTEXT           "Dimension",IDC_STATIC,362,20,41,10
+    LTEXT           "Gradient size\n(step size):",IDC_STATIC,362,37,45,19
+    GROUPBOX        "Clustering Parameters",IDC_STATIC,207,6,140,102
+    GROUPBOX        "Projection Parameters",IDC_STATIC,355,6,108,102
+    LTEXT           "Clustering algorithm:",IDC_STATIC,14,68,69,11
+    LTEXT           "Projection algorithm:",IDC_STATIC,14,90,68,10
+    GROUPBOX        "",IDC_STATIC,5,57,193,51
+    GROUPBOX        "",IDC_STATIC,5,107,458,55
+    GROUPBOX        "",IDC_STATIC,5,6,193,49
+    EDITTEXT        IDC_EDIT_SIZE_CLUSTERED_SET,85,143,46,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_STATUS,151,143,195,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Save Data Set",IDC_BUTTON_SAVE_DATA_SET,417,183,42,29,BS_MULTILINE
+    GROUPBOX        "",IDC_STATIC,410,166,53,220
+    GROUPBOX        "",IDC_STATIC,410,391,53,59
+    PUSHBUTTON      "Save Partition matrix",IDC_BUTTON_SAVE_PARTITION_MATRIX,417,234,42,29,BS_MULTILINE
+    PUSHBUTTON      "Save Projection Matrix",IDC_BUTTONPROJECTION_MATRIX,417,275,42,30,BS_MULTILINE
+    LTEXT           "All files are saved to O:\\Output with default names",IDC_STATIC,417,324,42,47
+    LTEXT           "Number of steps",IDC_STATIC,362,60,39,18
+    EDITTEXT        IDC_EDIT_NUM_OF_PROJ_STEPS,425,61,34,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,84,117,47,18
+    CONTROL         "",IDC_PROGRESS_CALCS,"msctls_progress32",0x0,151,120,196,13
+    LTEXT           "Estimated time to completion",IDC_STATIC,362,117,48,18
+    LTEXT           "Total time",IDC_STATIC,362,143,31,13
+    EDITTEXT        IDC_ESTIMATED_TIME,424,120,35,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TOTAL_TIME,424,143,35,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Start analyzer automatically",IDC_CHECK_ANALYZE_AUTOMATICALLY,
+                    "Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,14,36,155,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ANALYZER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 463
+        VERTGUIDE, 5
+        VERTGUIDE, 14
+        VERTGUIDE, 76
+        VERTGUIDE, 84
+        VERTGUIDE, 169
+        VERTGUIDE, 193
+        VERTGUIDE, 198
+        VERTGUIDE, 207
+        VERTGUIDE, 218
+        VERTGUIDE, 290
+        VERTGUIDE, 302
+        VERTGUIDE, 317
+        VERTGUIDE, 336
+        VERTGUIDE, 362
+        VERTGUIDE, 380
+        VERTGUIDE, 410
+        VERTGUIDE, 417
+        VERTGUIDE, 436
+        VERTGUIDE, 459
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 450
+        HORZGUIDE, 30
+        HORZGUIDE, 46
+        HORZGUIDE, 108
+        HORZGUIDE, 126
+        HORZGUIDE, 149
+        HORZGUIDE, 248
+        HORZGUIDE, 416
+        HORZGUIDE, 440
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ANALYZER_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_CLUSTERING_ALG, 0x403, 17, 0
+0x7547, 0x7473, 0x6661, 0x6f73, 0x2d6e, 0x654b, 0x7373, 0x6c65, "\000" 
+    IDC_COMBO_PROJECTION_ALG, 0x403, 13, 0
+0x7546, 0x7a7a, 0x2079, 0x6153, 0x6d6d, 0x6e6f, "\000" 
+    0
+END
+
+#endif    // Hebrew resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1255)
+#include "res\Analyzer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
